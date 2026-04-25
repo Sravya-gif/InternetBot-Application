@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="InternetBot Suite">
+
+    <!-- Attach Listener -->
+    <listeners>
+        <listener class-name="com.srm.listeners.TestListener"/>
+    </listeners>
+
+    <test name="All Tests">
+
+        <classes>
+            <class name="com.srm.tests.Logintest"/>
+            <class name="com.srm.tests.AlertTest"/>
+            <class name="com.srm.tests.CheckboxDropdownTest"/>
+            <class name="com.srm.tests.UploadTest"/>
+            <class name="com.srm.tests.DynamicTest"/>
+        </classes>
+
+    </test>
+
+</suite>
